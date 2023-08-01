@@ -12,11 +12,21 @@ const AllNews = ({ allNews }) => {
   const { Meta } = Card;
   return (
     <>
-      <h1>#FEATURED PRODUCTS</h1>
+      <div className="" style={{ textAlign: "center", margin: "20px 0" }}>
+        <h1 style={{ textAlign: "center" }}>FEATURED PRODUCTS</h1>
+        <h3 style={{ textAlign: "center" }}>
+          Check & Get Your Desired Product!
+        </h3>
+      </div>
+
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
         {allNews?.map((news) => (
-          <Col key={news.id} className="gutter-row" span={4}>
-            {/* <Link href={"/"}> */}
+          <Col
+            key={news.id}
+            style={{ margin: "10px 0" }}
+            className="gutter-row"
+            span={6}
+          >
             <Card
               hoverable
               cover={
