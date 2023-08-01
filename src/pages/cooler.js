@@ -1,6 +1,6 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 
-const PowerSupplyCatPage = () => {
+const CpuCoolerCatPage = () => {
   return (
     <div>
       <h1>PowerSupplyCatPage</h1>
@@ -8,8 +8,8 @@ const PowerSupplyCatPage = () => {
   );
 };
 
-export default PowerSupplyCatPage;
+export default CpuCoolerCatPage;
 
-PowerSupplyCatPage.getLayout = function getLayout(page) {
+CpuCoolerCatPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };

@@ -1,6 +1,6 @@
+import cooler from "@/assets/images/banner-images/cpuCooler.jpg";
 import monitor from "@/assets/images/banner-images/fcMonitor6.jpg";
 import motherboard from "@/assets/images/banner-images/fcMotherB.png";
-import power from "@/assets/images/banner-images/fcPower.png";
 import processor from "@/assets/images/banner-images/fcProcessor.jpg";
 import ram from "@/assets/images/banner-images/fcRam.png";
 import storage from "@/assets/images/banner-images/fcStore.png";
@@ -95,12 +95,12 @@ const FeaturedCategory = () => {
           </Link>
         </Col>
         <Col span={4} style={{ margin: "10px 0" }}>
-          <Link href="/power-supply">
+          <Link href="/cooler">
             <Card
               hoverable
               cover={
                 <Image
-                  src={power}
+                  src={cooler}
                   width={200}
                   height={200}
                   responsive
@@ -109,7 +109,7 @@ const FeaturedCategory = () => {
               }
             >
               <h1 style={{ textAlign: "center", fontSize: "30px" }}>
-                Power Supply
+                CPU cooler
               </h1>
             </Card>
           </Link>
@@ -122,7 +122,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={ram}
                   width={200}
-                  height={250}
+                  height={200}
                   responsive
                   alt="ram image"
                 />

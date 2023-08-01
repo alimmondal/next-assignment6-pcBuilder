@@ -7,7 +7,7 @@ import {
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
 
-const NewsDetailsPage = ({ news }) => {
+const NewsDetailsPage = ({ product }) => {
   // const { news} = useGetSingleNewsQuery()
   const { Meta } = Card;
   return (
@@ -15,7 +15,7 @@ const NewsDetailsPage = ({ news }) => {
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
         <Col className="gutter-row" span={12}>
           <Image
-            src={news?.image_url}
+            src={product?.image_url}
             width={500}
             height={500}
             responsive
@@ -23,10 +23,10 @@ const NewsDetailsPage = ({ news }) => {
           />
         </Col>
         <Col className="gutter-row" span={12}>
-          <h1 style={{ fontSize: "25px" }}>{news?.title}</h1>
+          <h1 style={{ fontSize: "25px" }}>{product?.title}</h1>
           <span>
             <ProfileOutlined />
-            {news?.author}
+            {product?.author}
           </span>
           <div
             className="line"
@@ -49,15 +49,15 @@ const NewsDetailsPage = ({ news }) => {
           >
             <span style={{ fontSize: "20px" }}>
               <CalendarOutlined />
-              {news?.release_data}
+              {product?.price}
             </span>
             <span style={{ fontSize: "20px" }}>
               <CommentOutlined />
-              {news?.comment_count}
+              {product?.status}
             </span>
             <span style={{ fontSize: "20px" }}>
               <ProfileOutlined />
-              {news?.category}
+              {product?.category}
             </span>
           </p>
           <p
@@ -65,7 +65,11 @@ const NewsDetailsPage = ({ news }) => {
               fontSize: "20px",
             }}
           >
-            {news?.description}
+            <ul className="">
+              {product?.features?.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
           </p>
           {/* <h5>Written by: {news?.author}</h5> */}
         </Col>
@@ -82,10 +86,10 @@ NewsDetailsPage.getLayout = function getLayout(page) {
 
 export const getStaticPaths = async () => {
   const res = await fetch("http://localhost:5000/featured");
-  const newses = await res.json();
+  const products = await res.json();
 
-  const paths = newses.map((news) => ({
-    params: { newsId: news.id },
+  const paths = products.map((product) => ({
+    params: { productId: product.id },
   }));
 
   return {
@@ -96,12 +100,12 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:5000/featured/${params.newsId}`);
+  const res = await fetch(`http://localhost:5000/featured/${params.productId}`);
   const data = await res.json();
 
   return {
     props: {
-      news: data,
+      product: data,
     },
   };
 };

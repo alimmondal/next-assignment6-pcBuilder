@@ -79,7 +79,7 @@ const FeatureProduct = ({ featureProducts }) => {
               >
                 {products?.category}
               </p>
-              <Link href={`/news/${products?.id}`}>
+              <Link href={`/productDetails/${products?.id}`}>
                 <Button
                   style={{
                     display: "flex",

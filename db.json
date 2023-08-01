@@ -4,7 +4,15 @@
       "id": "1",
       "title": "MSI PRO MP223 21.45 Full HD Business Monitor",
       "status": "in-stock",
-      "price": "2222",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": "222",
       "category": "Processor",
       "rating": 5,
       "image_url": "/images/p1.png"
@@ -13,7 +21,15 @@
       "id": "2",
       "title": "Colorful GeForce RTX 3060 NB DUO 8GB-V 8GB GDDR6 Graphics Card",
       "status": "in-stock",
-      "price": "3333",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": "333",
       "category": "Motherboard",
       "rating": 4,
       "image_url": "/images/fp2.png"
@@ -23,15 +39,30 @@
       "title": "Samsung Galaxy Book2 360 Core i5 12th Gen 13.3 FHD AMOLED Touch Laptop",
       "image_url": "/images/fp3.png",
       "status": "in stock",
-      "price": "2222",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": "222",
       "category": "Ram",
       "rating": 5
     },
     {
       "id": "4",
       "title": "Google Pixel 7 Android Smartphone (8/128GB)",
-      "price": 2023,
-      "features": "",
+      "price": 223,
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
       "category": "Power Supply",
       "rating": 20,
       "image_url": "/images/fp4.png",
@@ -40,7 +71,15 @@
     {
       "id": "5",
       "title": "Lenovo IdeaPad 3 14ABA7 Ryzen 5 5625U 14 FHD Laptop",
-      "price": 2023,
+      "price": 223,
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
       "category": "Storage device",
       "rating": 5,
       "image_url": "/images/fp5.png",
@@ -50,7 +89,15 @@
       "id": "6",
       "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
       "status": "in-stock",
-      "price": 2023,
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
       "category": "Monitor",
       "rating": 4.5,
       "image_url": "/images/fp6.png"
@@ -59,7 +106,15 @@
       "id": "7",
       "title": "HUAWEI FreeBuds 5 In-Ear True Wireless Earbuds",
       "status": "in-stock",
-      "price": 2023,
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 202,
       "category": "Head pone",
       "rating": 4.5,
       "image_url": "/images/fp7.png"
