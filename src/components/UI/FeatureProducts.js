@@ -8,7 +8,7 @@ import { Button, Card, Col, Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-const AllNews = ({ allNews }) => {
+const FeatureProduct = ({ featureProducts }) => {
   const { Meta } = Card;
   return (
     <>
@@ -20,9 +20,9 @@ const AllNews = ({ allNews }) => {
       </div>
 
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
-        {allNews?.map((news) => (
+        {featureProducts?.map((products) => (
           <Col
-            key={news.id}
+            key={products.id}
             style={{ margin: "10px 0" }}
             className="gutter-row"
             span={6}
@@ -31,15 +31,15 @@ const AllNews = ({ allNews }) => {
               hoverable
               cover={
                 <Image
-                  src={news?.image_url}
+                  src={products?.image_url}
                   width={200}
-                  height={200}
+                  height={250}
                   responsive
                   alt="news image"
                 />
               }
             >
-              <Meta title={news?.title} />
+              <Meta title={products?.title} />
               <div
                 className="line"
                 style={{
@@ -61,15 +61,15 @@ const AllNews = ({ allNews }) => {
               >
                 <span>
                   <StarOutlined />
-                  {news?.rating}
+                  {products?.rating}
                 </span>
                 <span>
                   <DollarOutlined />
-                  {news?.price}
+                  {products?.price}
                 </span>
                 <span>
                   <ProfileOutlined />
-                  {news?.status}
+                  {products?.status}
                 </span>
               </p>
               <p
@@ -77,9 +77,9 @@ const AllNews = ({ allNews }) => {
                   fontSize: "25px",
                 }}
               >
-                {news?.category}
+                {products?.category}
               </p>
-              <Link href={`/news/${news?.id}`}>
+              <Link href={`/news/${products?.id}`}>
                 <Button
                   style={{
                     display: "flex",
@@ -94,7 +94,6 @@ const AllNews = ({ allNews }) => {
                 </Button>
               </Link>
             </Card>
-            {/* </Link> */}
           </Col>
         ))}
       </Row>
@@ -102,4 +101,4 @@ const AllNews = ({ allNews }) => {
   );
 };
 
-export default AllNews;
+export default FeatureProduct;

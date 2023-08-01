@@ -2,26 +2,26 @@
   "featured": [
     {
       "id": "1",
-      "title": "Intel 13th Gen Core i5 13600K Raptor Lake Processor",
+      "title": "MSI PRO MP223 21.45 Full HD Business Monitor",
       "status": "in-stock",
       "price": "2222",
       "category": "Processor",
       "rating": 5,
-      "image_url": "/images/fpp1.jpg"
+      "image_url": "/images/p1.png"
     },
     {
       "id": "2",
-      "title": "ASRock H470M-HDV/M.2 10th Gen Micro ATX Motherboard",
+      "title": "Colorful GeForce RTX 3060 NB DUO 8GB-V 8GB GDDR6 Graphics Card",
       "status": "in-stock",
       "price": "3333",
       "category": "Motherboard",
       "rating": 4,
-      "image_url": "/images/fpm2.png"
+      "image_url": "/images/fp2.png"
     },
     {
       "id": "3",
-      "title": "SpaceX Successfully Launches Satellite into Orbit",
-      "image_url": "/images/fpRam3.png",
+      "title": "Samsung Galaxy Book2 360 Core i5 12th Gen 13.3 FHD AMOLED Touch Laptop",
+      "image_url": "/images/fp3.png",
       "status": "in stock",
       "price": "2222",
       "category": "Ram",
@@ -29,30 +29,40 @@
     },
     {
       "id": "4",
-      "title": "Lian Li SP750 Performance SFX 80 PLUS Gold Fully Modular Power Supply",
+      "title": "Google Pixel 7 Android Smartphone (8/128GB)",
       "price": 2023,
+      "features": "",
       "category": "Power Supply",
       "rating": 20,
-      "image_url": "/images/fpps4.png",
+      "image_url": "/images/fp4.png",
       "status": "Mindfulness Magazine"
     },
     {
       "id": "5",
-      "title": "Asustor AS6602T NAS Storage",
+      "title": "Lenovo IdeaPad 3 14ABA7 Ryzen 5 5625U 14 FHD Laptop",
       "price": 2023,
       "category": "Storage device",
       "rating": 5,
-      "image_url": "/images/fpStorage5.png",
+      "image_url": "/images/fp5.png",
       "status": "in-stock"
     },
     {
       "id": "6",
-      "title": "Lenovo D19-10 18.5 Inch HD HDMI VGA Monitor",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
       "status": "in-stock",
       "price": 2023,
       "category": "Monitor",
       "rating": 4.5,
-      "image_url": "/images/fpMonitor6.jpg"
+      "image_url": "/images/fp6.png"
+    },
+    {
+      "id": "7",
+      "title": "HUAWEI FreeBuds 5 In-Ear True Wireless Earbuds",
+      "status": "in-stock",
+      "price": 2023,
+      "category": "Head pone",
+      "rating": 4.5,
+      "image_url": "/images/fp7.png"
     }
   ]
 }

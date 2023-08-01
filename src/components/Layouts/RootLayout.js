@@ -68,7 +68,7 @@ const RootLayout = ({ children }) => {
                 borderRadius: "3px",
               }}
             >
-              MOON_TECH
+              SUN_TECH
             </Link>
           </h1>
         </div>
@@ -143,7 +143,7 @@ const RootLayout = ({ children }) => {
             fontSize: "28px",
           }}
         >
-          PH-NEWS PORTAL
+          SUN_TECH
         </h2>
         <p className={styles.social_icons}>
           <Link href="https://web.facebook.com/groups/programmingherocommunity">
@@ -159,7 +159,7 @@ const RootLayout = ({ children }) => {
             <LinkedinFilled />
           </Link>
         </p>
-        News Portal ©2023 Created by Programming Hero
+        SUN_TECH ©2023 Created by Programming Hero
       </Footer>
     </Layout>
   );

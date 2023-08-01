@@ -8,7 +8,7 @@ import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-const Featured = () => {
+const FeaturedCategory = () => {
   return (
     <div>
       <div className="">
@@ -18,7 +18,7 @@ const Featured = () => {
         </div>
       </div>
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
-        <Col style={{ margin: "10px 0" }} span={6}>
+        <Col style={{ margin: "10px 0" }} span={4}>
           <Link href="/monitor">
             <Card
               hoverable
@@ -26,7 +26,7 @@ const Featured = () => {
                 <Image
                   src={monitor}
                   width={200}
-                  height={300}
+                  height={200}
                   responsive
                   alt="news image"
                 />
@@ -36,7 +36,7 @@ const Featured = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={6}>
+        <Col style={{ margin: "10px 0" }} span={4}>
           <Link href="/processor">
             <Card
               hoverable
@@ -44,7 +44,7 @@ const Featured = () => {
                 <Image
                   src={processor}
                   width={200}
-                  height={300}
+                  height={200}
                   responsive
                   alt="processor image"
                 />
@@ -56,7 +56,7 @@ const Featured = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={6}>
+        <Col style={{ margin: "10px 0" }} span={4}>
           <Link href="/motherboard">
             <Card
               hoverable
@@ -64,7 +64,7 @@ const Featured = () => {
                 <Image
                   src={motherboard}
                   width={200}
-                  height={300}
+                  height={200}
                   responsive
                   alt="news image"
                 />
@@ -76,7 +76,7 @@ const Featured = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} className="gutter-row" span={6}>
+        <Col style={{ margin: "10px 0" }} span={4}>
           <Link href="/storage">
             <Card
               hoverable
@@ -84,7 +84,7 @@ const Featured = () => {
                 <Image
                   src={storage}
                   width={200}
-                  height={300}
+                  height={200}
                   responsive
                   alt="news image"
                 />
@@ -94,7 +94,7 @@ const Featured = () => {
             </Card>
           </Link>
         </Col>
-        <Col className="gutter-row" span={6} style={{ margin: "10px 0" }}>
+        <Col span={4} style={{ margin: "10px 0" }}>
           <Link href="/power-supply">
             <Card
               hoverable
@@ -102,7 +102,7 @@ const Featured = () => {
                 <Image
                   src={power}
                   width={200}
-                  height={300}
+                  height={200}
                   responsive
                   alt="news image"
                 />
@@ -114,7 +114,7 @@ const Featured = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} className="gutter-row" span={6}>
+        <Col style={{ margin: "10px 0" }} span={4}>
           <Link href="/ram">
             <Card
               hoverable
@@ -122,7 +122,7 @@ const Featured = () => {
                 <Image
                   src={ram}
                   width={200}
-                  height={300}
+                  height={250}
                   responsive
                   alt="ram image"
                 />
@@ -137,4 +137,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default FeaturedCategory;
