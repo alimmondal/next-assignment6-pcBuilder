@@ -1,0 +1,58 @@
+{
+  "featured": [
+    {
+      "id": "1",
+      "title": "Intel 13th Gen Core i5 13600K Raptor Lake Processor",
+      "status": "in-stock",
+      "price": "2222",
+      "category": "Processor",
+      "rating": 5,
+      "image_url": "/images/fpp1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "ASRock H470M-HDV/M.2 10th Gen Micro ATX Motherboard",
+      "status": "in-stock",
+      "price": "3333",
+      "category": "Motherboard",
+      "rating": 4,
+      "image_url": "/images/fpm2.png"
+    },
+    {
+      "id": "3",
+      "title": "SpaceX Successfully Launches Satellite into Orbit",
+      "image_url": "/images/fpRam3.png",
+      "status": "in stock",
+      "price": "2222",
+      "category": "Ram",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "title": "Lian Li SP750 Performance SFX 80 PLUS Gold Fully Modular Power Supply",
+      "price": 2023,
+      "category": "Power Supply",
+      "rating": 20,
+      "image_url": "/images/fpps4.png",
+      "status": "Mindfulness Magazine"
+    },
+    {
+      "id": "5",
+      "title": "Asustor AS6602T NAS Storage",
+      "price": 2023,
+      "category": "Storage device",
+      "rating": 5,
+      "image_url": "/images/fpStorage5.png",
+      "status": "in-stock"
+    },
+    {
+      "id": "6",
+      "title": "Lenovo D19-10 18.5 Inch HD HDMI VGA Monitor",
+      "status": "in-stock",
+      "price": 2023,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fpMonitor6.jpg"
+    }
+  ]
+}
