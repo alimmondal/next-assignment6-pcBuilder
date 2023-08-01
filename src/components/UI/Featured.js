@@ -1,4 +1,9 @@
-import monitor from "@/assets/images/banner-images/h4.jpeg";
+import monitor from "@/assets/images/banner-images/fcMonitor6.jpg";
+import motherboard from "@/assets/images/banner-images/fcMotherB.png";
+import power from "@/assets/images/banner-images/fcPower.png";
+import processor from "@/assets/images/banner-images/fcProcessor.jpg";
+import ram from "@/assets/images/banner-images/fcRam.png";
+import storage from "@/assets/images/banner-images/fcStore.png";
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,8 +12,8 @@ const Featured = () => {
   return (
     <div>
       <div className="">
-        <div className="" style={{ textAlign: "center", margin: "20px 0" }}>
-          <h1>Featured Category</h1>
+        <div className="" style={{ textAlign: "center", margin: "30px 0" }}>
+          <h1 style={{ fontSize: "40px" }}>Featured Category</h1>
           <h3>Get Your Desired Product from Featured Category!</h3>
         </div>
       </div>
@@ -21,25 +26,7 @@ const Featured = () => {
                 <Image
                   src={monitor}
                   width={200}
-                  height={200}
-                  responsive
-                  alt="news image"
-                />
-              }
-            >
-              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Monitor</h1>
-            </Card>
-          </Link>
-        </Col>
-        <Col rstyle={{ margin: "10px 0" }} span={6}>
-          <Link href="/monitor">
-            <Card
-              hoverable
-              cover={
-                <Image
-                  src={monitor}
-                  width={200}
-                  height={200}
+                  height={300}
                   responsive
                   alt="news image"
                 />
@@ -50,74 +37,98 @@ const Featured = () => {
           </Link>
         </Col>
         <Col style={{ margin: "10px 0" }} span={6}>
-          <Link href="/monitor">
+          <Link href="/processor">
             <Card
               hoverable
               cover={
                 <Image
-                  src={monitor}
+                  src={processor}
                   width={200}
-                  height={200}
+                  height={300}
+                  responsive
+                  alt="processor image"
+                />
+              }
+            >
+              <h1 style={{ textAlign: "center", fontSize: "30px" }}>
+                Processor
+              </h1>
+            </Card>
+          </Link>
+        </Col>
+        <Col style={{ margin: "10px 0" }} span={6}>
+          <Link href="/motherboard">
+            <Card
+              hoverable
+              cover={
+                <Image
+                  src={motherboard}
+                  width={200}
+                  height={300}
                   responsive
                   alt="news image"
                 />
               }
             >
-              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Monitor</h1>
+              <h1 style={{ textAlign: "center", fontSize: "30px" }}>
+                Motherboard
+              </h1>
             </Card>
           </Link>
         </Col>
         <Col style={{ margin: "10px 0" }} className="gutter-row" span={6}>
-          <Link href="/monitor">
+          <Link href="/storage">
             <Card
               hoverable
               cover={
                 <Image
-                  src={monitor}
+                  src={storage}
                   width={200}
-                  height={200}
+                  height={300}
                   responsive
                   alt="news image"
                 />
               }
             >
-              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Monitor</h1>
+              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Storage</h1>
             </Card>
           </Link>
         </Col>
         <Col className="gutter-row" span={6} style={{ margin: "10px 0" }}>
-          <Link href="/monitor">
+          <Link href="/power-supply">
             <Card
               hoverable
               cover={
                 <Image
-                  src={monitor}
+                  src={power}
                   width={200}
-                  height={200}
+                  height={300}
                   responsive
                   alt="news image"
                 />
               }
             >
-              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Monitor</h1>
+              <h1 style={{ textAlign: "center", fontSize: "30px" }}>
+                Power Supply
+              </h1>
             </Card>
           </Link>
         </Col>
         <Col style={{ margin: "10px 0" }} className="gutter-row" span={6}>
-          <Link href="/monitor">
+          <Link href="/ram">
             <Card
               hoverable
               cover={
                 <Image
-                  src={monitor}
+                  src={ram}
                   width={200}
-                  height={200}
+                  height={300}
                   responsive
-                  alt="news image"
+                  alt="ram image"
                 />
               }
             >
-              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Monitor</h1>
+              <h1 style={{ textAlign: "center", fontSize: "30px" }}>Ram</h1>
             </Card>
           </Link>
         </Col>
