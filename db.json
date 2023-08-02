@@ -13,7 +13,7 @@
         "20 days of battery life"
       ],
       "price": "222",
-      "category": "Processor",
+      "category": "Monitor",
       "rating": 5,
       "image_url": "/images/p1.png",
       "reviews": "this is a good review"
@@ -31,7 +31,7 @@
         "20 days of battery life"
       ],
       "price": "333",
-      "category": "Motherboard",
+      "category": "Graphics Card",
       "rating": 4,
       "image_url": "/images/fp2.png",
       "reviews": "this is a good review"
@@ -50,7 +50,7 @@
         "20 days of battery life"
       ],
       "price": "222",
-      "category": "Ram",
+      "category": "Laptop",
       "rating": 5,
       "reviews": "this is a good review"
     },
@@ -66,7 +66,7 @@
         "IP68 dustproof and waterproof",
         "20 days of battery life"
       ],
-      "category": "Power Supply",
+      "category": "Pone",
       "rating": 20,
       "image_url": "/images/fp4.png",
       "status": "Mindfulness Magazine",
@@ -84,7 +84,7 @@
         "IP68 dustproof and waterproof",
         "20 days of battery life"
       ],
-      "category": "Storage device",
+      "category": "Lenovo Laptop",
       "rating": 5,
       "image_url": "/images/fp5.png",
       "status": "in-stock",
@@ -103,7 +103,7 @@
         "20 days of battery life"
       ],
       "price": 223,
-      "category": "Monitor",
+      "category": "smart Watch",
       "rating": 4.5,
       "image_url": "/images/fp6.png",
       "reviews": "this is a good review"
@@ -127,9 +127,10 @@
       "reviews": "this is a good review"
     }
   ],
+
   "monitor": [
     {
-      "id": "6",
+      "id": "1",
       "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
       "status": "in-stock",
       "features": [

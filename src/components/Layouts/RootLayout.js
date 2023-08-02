@@ -17,35 +17,33 @@ const RootLayout = ({ children }) => {
   const items = [
     {
       key: "1",
-      label: <Link href="https://www.antgroup.com">CPU / Processor</Link>,
+      label: <Link href="/processor">CPU / Processor</Link>,
     },
     {
       key: "2",
-      label: <Link href="https://www.aliyun.com">Motherboard</Link>,
+      label: <Link href="/motherboard">Motherboard</Link>,
       // icon: <SmileOutlined />,
       // disabled: true,
     },
     {
       key: "3",
-      label: <Link href="https://www.luohanacademy.com">Ram</Link>,
+      label: <Link href="/ram">Ram</Link>,
     },
     {
       key: "4",
-      label: (
-        <Link href="https://www.luohanacademy.com">Power Supply Unit</Link>
-      ),
+      label: <Link href="/cooler">CPU Cooler</Link>,
     },
     {
       key: "5",
-      label: <Link href="https://www.luohanacademy.com">Storage Device</Link>,
+      label: <Link href="/storage">Storage Device</Link>,
     },
     {
       key: "6",
-      label: <Link href="https://www.luohanacademy.com">Monitor</Link>,
+      label: <Link href="/monitor">Monitor</Link>,
     },
     {
       key: "5",
-      label: <Link href="https://www.luohanacademy.com">Others</Link>,
+      label: <Link href="pc-builder">Others</Link>,
     },
   ];
 
@@ -82,7 +80,7 @@ const RootLayout = ({ children }) => {
             <a onClick={(e) => e.preventDefault()}>
               <Space>
                 Category
-                <DownOutlined />
+                <DownOutlined style={{ marginRight: "10px" }} />
               </Space>
             </a>
           </Dropdown>
