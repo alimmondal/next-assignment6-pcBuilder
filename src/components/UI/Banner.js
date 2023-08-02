@@ -1,5 +1,5 @@
 import viper from "@/assets/images/banner-images/h2.jpeg";
-import EagleImage from "@/assets/images/banner-images/h4.jpeg";
+import perk from "@/assets/images/banner-images/h4.jpeg";
 import {
   ArrowRightOutlined,
   CalendarOutlined,
@@ -87,7 +87,7 @@ const Banner = () => (
           }}
           style={contentStyle}
         >
-          <Image src={viper} fill alt="drawing_image" />
+          <Image src={perk} fill alt="drawing_image" />
         </Col>
       </Row>
     </div>
@@ -162,7 +162,7 @@ const Banner = () => (
           style={contentStyle}
         >
           <Image
-            src={EagleImage}
+            src={viper}
             fill
             alt="eagle_image"
             style={{ grayScale: "-1" }}
