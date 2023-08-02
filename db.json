@@ -15,7 +15,8 @@
       "price": "222",
       "category": "Processor",
       "rating": 5,
-      "image_url": "/images/p1.png"
+      "image_url": "/images/p1.png",
+      "reviews": "this is a good review"
     },
     {
       "id": "2",
@@ -32,7 +33,8 @@
       "price": "333",
       "category": "Motherboard",
       "rating": 4,
-      "image_url": "/images/fp2.png"
+      "image_url": "/images/fp2.png",
+      "reviews": "this is a good review"
     },
     {
       "id": "3",
@@ -49,7 +51,8 @@
       ],
       "price": "222",
       "category": "Ram",
-      "rating": 5
+      "rating": 5,
+      "reviews": "this is a good review"
     },
     {
       "id": "4",
@@ -66,7 +69,8 @@
       "category": "Power Supply",
       "rating": 20,
       "image_url": "/images/fp4.png",
-      "status": "Mindfulness Magazine"
+      "status": "Mindfulness Magazine",
+      "reviews": "this is a good review"
     },
     {
       "id": "5",
@@ -83,7 +87,8 @@
       "category": "Storage device",
       "rating": 5,
       "image_url": "/images/fp5.png",
-      "status": "in-stock"
+      "status": "in-stock",
+      "reviews": "this is a good review"
     },
     {
       "id": "6",
@@ -100,7 +105,8 @@
       "price": 223,
       "category": "Monitor",
       "rating": 4.5,
-      "image_url": "/images/fp6.png"
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
     },
     {
       "id": "7",
@@ -117,7 +123,130 @@
       "price": 202,
       "category": "Head pone",
       "rating": 4.5,
-      "image_url": "/images/fp7.png"
+      "image_url": "/images/fp7.png",
+      "reviews": "this is a good review"
+    }
+  ],
+  "monitor": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
+    }
+  ],
+
+  "motherboard": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
+    }
+  ],
+
+  "processor": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
+    }
+  ],
+  "ram": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
+    }
+  ],
+  "cpuCooler": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
+    }
+  ],
+  "storageDevice": [
+    {
+      "id": "6",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "/images/fp6.png",
+      "reviews": "this is a good review"
     }
   ]
 }

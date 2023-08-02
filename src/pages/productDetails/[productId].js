@@ -60,18 +60,19 @@ const NewsDetailsPage = ({ product }) => {
               {product?.category}
             </span>
           </p>
-          <p
+          <div
             style={{
               fontSize: "20px",
             }}
           >
+            <h3>Key Features:</h3>
             <ul className="">
               {product?.features?.map((feature) => (
                 <li key={feature}>{feature}</li>
               ))}
             </ul>
-          </p>
-          {/* <h5>Written by: {news?.author}</h5> */}
+          </div>
+          <h3>Reviews: {product?.reviews}</h3>
         </Col>
       </Row>
     </div>
