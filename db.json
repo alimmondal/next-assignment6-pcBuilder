@@ -144,7 +144,43 @@
       "price": 223,
       "category": "Monitor",
       "rating": 4.5,
-      "image_url": "/images/fp6.png",
+      "image_url": "https://www.startech.com.bd/image/cache/catalog/monitor/enter/e-mo-a01/e-mo-a01-01-500x500.webp",
+      "reviews": "this is a good review"
+    },
+    {
+      "id": "",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "https://www.startech.com.bd/image/cache/catalog/monitor/philips/193v/193v-500x500.png",
+      "reviews": "this is a good review"
+    },
+    {
+      "id": "3",
+      "title": "Zepp E Square AMOLED Display Waterproof Smartwatch",
+      "status": "in-stock",
+      "features": [
+        "1.69'' HD display",
+        "Support 12 workout modes",
+        "Support all-day heart rate and blood oxygen monitoring",
+        "Support intelligent sleep monitoring",
+        "IP68 dustproof and waterproof",
+        "20 days of battery life"
+      ],
+      "price": 223,
+      "category": "Monitor",
+      "rating": 4.5,
+      "image_url": "https://www.startech.com.bd/image/cache/catalog/monitor/hp-monitor/v20/v20-500x500.jpg",
       "reviews": "this is a good review"
     }
   ],
