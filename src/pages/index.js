@@ -2,7 +2,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Banner";
 import FeatureProduct from "@/components/UI/FeatureProducts";
-import FeaturedCategory from "@/components/UI/Featured";
+import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import Head from "next/head";
 
 const HomePage = ({ featureProducts }) => {

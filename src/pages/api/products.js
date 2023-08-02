@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri =
-  "mongodb+srv://nextNews:nextNews@cluster0.es092.mongodb.net/next-news?retryWrites=true&w=majority";
+  "mongodb+srv://nextPcBuilder:nextPcBuilder@cluster0.es092.mongodb.net/next-news?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -14,17 +14,21 @@ async function run(req, res) {
   try {
     await client.connect();
 
-    const newsCollection = await client.db("news_portal").collection("news");
+    const pcCollection = await client.db("pc_builder").collection("pc");
     console.log("Database connected!");
     if (req.method === "GET") {
-      const news = await newsCollection.find({}).toArray();
-      res.send({ message: "Success", status: 200, data: news });
+      const products = await pcCollection.find({}).toArray();
+      res.send({ message: "Success", status: 200, data: products });
     }
 
     if (req.method === "POST") {
-      const news = req.body;
-      const result = await newsCollection.insertOne(news);
+      const products = req.body;
+      const result = await pcCollection.insertOne(products);
       res.json(result);
+    }
+    if (req.method === " GET") {
+      const result = await pcCollection.findOne(req.query.id);
+      res.send(result);
     }
   } finally {
     // Ensures that the client will close when you finish/error
