@@ -1,12 +1,13 @@
-import viper from "@/assets/images/banner-images/h2.jpeg";
 import RootLayout from "@/components/Layouts/RootLayout";
 import { Button, Divider } from "antd";
-import Image from "next/image";
 import Link from "next/link";
+import { BsFillCpuFill, BsFillMouseFill, BsMotherboard } from "react-icons/bs";
+import { FiMonitor } from "react-icons/fi";
+import { GiComputerFan, GiProcessor } from "react-icons/gi";
 
-const PcBuilder = ({ featureProducts }) => {
+const PcBuilder = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{}}>
       <div
         style={{
           boxShadow:
@@ -34,13 +35,14 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
+            {/* <Image
               src={viper}
               width={100}
               height={100}
               responsive
               alt="news image"
-            />
+            /> */}
+            <FiMonitor size={80} />
             <div
               style={{
                 display: "flex",
@@ -50,7 +52,7 @@ const PcBuilder = ({ featureProducts }) => {
                 gap: "0.5em",
               }}
             >
-              <p>CPU Cooler</p>
+              <p>Monitor</p>
               <div
                 style={{
                   height: "17px",
@@ -65,6 +67,7 @@ const PcBuilder = ({ featureProducts }) => {
           </Link>
         </div>
         <Divider orientation="left"></Divider>
+
         <div
           className=""
           style={{
@@ -83,13 +86,14 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
+            {/* <Image
               src={viper}
               width={100}
               height={100}
               responsive
               alt="news image"
-            />
+            /> */}
+            <BsFillCpuFill size={80} />
             <div
               style={{
                 display: "flex",
@@ -109,12 +113,12 @@ const PcBuilder = ({ featureProducts }) => {
               ></div>
             </div>
           </div>
-
           <Link href={"/processor"}>
             <Button>Choose</Button>
           </Link>
         </div>
         <Divider orientation="left"></Divider>
+
         <div
           className=""
           style={{
@@ -133,13 +137,7 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            />
+            <BsMotherboard size={70} />
             <div
               style={{
                 display: "flex",
@@ -159,12 +157,12 @@ const PcBuilder = ({ featureProducts }) => {
               ></div>
             </div>
           </div>
-
           <Link href={"/motherboard"}>
             <Button>Choose</Button>
           </Link>
         </div>
         <Divider orientation="left"></Divider>
+
         <div
           className=""
           style={{
@@ -183,13 +181,7 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            />
+            <GiComputerFan size={80} />
             <div
               style={{
                 display: "flex",
@@ -215,6 +207,7 @@ const PcBuilder = ({ featureProducts }) => {
           </Link>
         </div>
         <Divider orientation="left"></Divider>
+
         <div
           className=""
           style={{
@@ -233,13 +226,7 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            />
+            <GiProcessor size={80} />
             <div
               style={{
                 display: "flex",
@@ -249,7 +236,7 @@ const PcBuilder = ({ featureProducts }) => {
                 gap: "0.5em",
               }}
             >
-              <p>Storage</p>
+              <p>Ram</p>
               <div
                 style={{
                   height: "17px",
@@ -259,12 +246,12 @@ const PcBuilder = ({ featureProducts }) => {
               ></div>
             </div>
           </div>
-
-          <Link href={"/storage"}>
+          <Link href={"/ram"}>
             <Button>Choose</Button>
           </Link>
         </div>
         <Divider orientation="left"></Divider>
+
         <div
           className=""
           style={{
@@ -283,13 +270,7 @@ const PcBuilder = ({ featureProducts }) => {
               gap: "1em",
             }}
           >
-            <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            />
+            <BsFillMouseFill size={80} />
             <div
               style={{
                 display: "flex",
@@ -299,7 +280,7 @@ const PcBuilder = ({ featureProducts }) => {
                 gap: "0.5em",
               }}
             >
-              <p>CPU Cooler</p>
+              <p>Gaming Mouse</p>
               <div
                 style={{
                   height: "17px",
