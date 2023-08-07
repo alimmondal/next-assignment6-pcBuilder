@@ -20,9 +20,9 @@ const FeatureProduct = ({ featureProducts }) => {
       </div>
 
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
-        {featureProducts?.map((products) => (
+        {featureProducts?.map((product) => (
           <Col
-            key={products.id}
+            key={product.id}
             style={{ margin: "10px 0" }}
             className="gutter-row"
             span={6}
@@ -31,7 +31,7 @@ const FeatureProduct = ({ featureProducts }) => {
               hoverable
               cover={
                 <Image
-                  src={products?.image_url}
+                  src={product?.image_url}
                   width={200}
                   height={250}
                   responsive
@@ -39,7 +39,7 @@ const FeatureProduct = ({ featureProducts }) => {
                 />
               }
             >
-              <Meta title={products?.title} />
+              <Meta title={product?.title} />
               <div
                 className="line"
                 style={{
@@ -61,15 +61,15 @@ const FeatureProduct = ({ featureProducts }) => {
               >
                 <span>
                   <StarOutlined />
-                  {products?.rating}
+                  {product?.rating}
                 </span>
                 <span>
                   <DollarOutlined />
-                  {products?.price}
+                  {product?.price}
                 </span>
                 <span>
                   <ProfileOutlined />
-                  {products?.status}
+                  {product?.status}
                 </span>
               </p>
               <p
@@ -77,9 +77,9 @@ const FeatureProduct = ({ featureProducts }) => {
                   fontSize: "25px",
                 }}
               >
-                {products?.category}
+                {product?.category}
               </p>
-              <Link href={`/productDetails/${products?.id}`}>
+              <Link href={`/product/${product?.id}`}>
                 <Button
                   style={{
                     display: "flex",

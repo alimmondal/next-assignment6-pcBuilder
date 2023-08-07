@@ -4,12 +4,12 @@ import {
   CommentOutlined,
   ProfileOutlined,
 } from "@ant-design/icons";
-import { Card, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import Image from "next/image";
 
-const NewsDetailsPage = ({ product }) => {
+const ProductDetailPage = ({ product }) => {
   // const { news} = useGetSingleNewsQuery()
-  const { Meta } = Card;
+  // const { Meta } = Card;
   return (
     <div>
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
@@ -79,9 +79,9 @@ const NewsDetailsPage = ({ product }) => {
   );
 };
 
-export default NewsDetailsPage;
+export default ProductDetailPage;
 
-NewsDetailsPage.getLayout = function getLayout(page) {
+ProductDetailPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 

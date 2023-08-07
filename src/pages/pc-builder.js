@@ -86,13 +86,6 @@ const PcBuilder = () => {
               gap: "1em",
             }}
           >
-            {/* <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            /> */}
             <BsFillCpuFill size={80} />
             <div
               style={{
