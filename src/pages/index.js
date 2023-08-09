@@ -40,14 +40,14 @@ HomePage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/featured");
+export const getServerSideProps = async () => {
+  const res = await fetch("http://localhost:3000/api/product");
   const data = await res.json();
   // console.log(data);
   return {
     props: {
-      featureProducts: data,
+      featureProducts: data.data,
     },
-    revalidate: 5,
+    // revalidate: 5,
   };
 };

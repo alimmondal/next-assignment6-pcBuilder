@@ -8,8 +8,6 @@ import { Col, Row } from "antd";
 import Image from "next/image";
 
 const ProductDetailPage = ({ product }) => {
-  // const { news} = useGetSingleNewsQuery()
-  // const { Meta } = Card;
   return (
     <div>
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
@@ -85,23 +83,24 @@ ProductDetailPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/featured");
-  const products = await res.json();
+// export const getStaticPaths = async () => {
+//   const res = await fetch("http://localhost:5000/featured");
+//   const products = await res.json();
 
-  const paths = products.map((product) => ({
-    params: { productId: product.id },
-  }));
+//   const paths = products.map((product) => ({
+//     params: { productId: product.id },
+//   }));
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:5000/featured/${params.productId}`);
+  const res = await fetch(`http://localhost:3000/api/
+  ${params.productId}`);
   const data = await res.json();
 
   return {

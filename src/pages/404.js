@@ -2,13 +2,14 @@ import ErrorImg from "@/assets/images/404_Error_Page.png";
 import { Button } from "antd";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 const NotFoundPage = () => {
   const router = useRouter();
 
-  setTimeout(() => {
-    router.push("/");
-  }, 3000);
+  // setTimeout(() => {
+  //   router.push("/");
+  // }, 3000);
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -27,9 +28,9 @@ const NotFoundPage = () => {
         alt="error_image"
         style={{ display: "flex", margin: "50px auto" }}
       />
-      {/* <Link href="/"> */}
-      <Button>Back To Home</Button>
-      {/* </Link> */}
+      <Link href="/">
+        <Button>Back To Home</Button>
+      </Link>
     </div>
   );
 };
