@@ -16,7 +16,9 @@ MonitorPage.getLayout = function getLayout(page) {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/featuredCategory/monitor");
+  const res = await fetch(
+    "https://nextpcbuilder-server-production.up.railway.app/monitor"
+  );
   const data = await res.json();
   // console.log(data);
   return {

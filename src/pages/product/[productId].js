@@ -4,7 +4,7 @@ import {
   CommentOutlined,
   ProfileOutlined,
 } from "@ant-design/icons";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import Image from "next/image";
 
 const ProductDetailPage = ({ product }) => {
@@ -71,6 +71,10 @@ const ProductDetailPage = ({ product }) => {
             </ul>
           </div>
           <h3>Reviews: {product?.reviews}</h3>
+
+          <div className="" style={{ marginTop: "20px" }}>
+            <Button type="primary">Add to cart</Button>
+          </div>
         </Col>
       </Row>
     </div>
@@ -99,13 +103,27 @@ ProductDetailPage.getLayout = function getLayout(page) {
 
 export const getServerSideProps = async (context) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:3000/api/
-  ${params.productId}`);
-  const data = await res.json();
+  try {
+    const res = await fetch(
+      `https://nextpcbuilder-server-production.up.railway.app/featured-pc/${params.productId}`
+    );
+    if (!res.ok) {
+      throw new Error(`Fetch failed with status ${res.status}`);
+    }
+    const data = await res.json();
+    // console.log("data received", data);
 
-  return {
-    props: {
-      product: data,
-    },
-  };
+    return {
+      props: {
+        product: data.data,
+      },
+    };
+  } catch (error) {
+    console.log("Fetch Error:", error);
+    return {
+      props: {
+        product: null,
+      },
+    };
+  }
 };

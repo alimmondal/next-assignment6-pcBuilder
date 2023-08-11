@@ -17,7 +17,7 @@ ProcessorCatPage.getLayout = function getLayout(page) {
 
 export const getServerSideProps = async () => {
   const res = await fetch(
-    "http://localhost:3000/api/featuredCategory/processor"
+    "https://nextpcbuilder-server-production.up.railway.app/processor"
   );
   const data = await res.json();
   // console.log(data);
