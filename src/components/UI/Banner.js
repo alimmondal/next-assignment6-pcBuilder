@@ -15,9 +15,17 @@ const contentStyle = {
 };
 
 const Banner = () => (
-  <Carousel effect="fade" autoplay style={{ margin: "20px 0px" }}>
+  <Carousel
+    effect="fade"
+    autoplay
+    style={{
+      margin: "20px 0px",
+    }}
+  >
     {/* slider-1 */}
-    <div>
+    <div
+      style={{ display: "flex", flexWrap: "wrap", flexWrap: "wrap-reverse" }}
+    >
       <Row>
         <Col
           lg={{
@@ -87,7 +95,7 @@ const Banner = () => (
           }}
           style={contentStyle}
         >
-          <Image src={perk} fill alt="drawing_image" />
+          <Image src={perk} responsive alt="drawing_image" />
         </Col>
       </Row>
     </div>
@@ -163,7 +171,7 @@ const Banner = () => (
         >
           <Image
             src={viper}
-            fill
+            responsive
             alt="eagle_image"
             style={{ grayScale: "-1" }}
           />

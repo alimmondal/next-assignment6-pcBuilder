@@ -7,18 +7,27 @@ import storage from "@/assets/images/banner-images/fcStore.png";
 import { Card, Col, Row } from "antd";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../../styles/featuredCategory.module.css";
 
 const FeaturedCategory = () => {
   return (
     <div>
       <div className="">
-        <div className="" style={{ textAlign: "center", margin: "30px 0" }}>
-          <h1 style={{ fontSize: "40px" }}>Featured Category</h1>
+        <div className={styles.fCH}>
+          <h1>Featured Category</h1>
           <h3>Get Your Desired Product from Featured Category!</h3>
         </div>
       </div>
-      <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
-        <Col style={{ margin: "10px 0" }} span={4}>
+      <Row
+        className={styles.fCategory}
+        gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}
+      >
+        <Col
+          style={{ margin: "10px 0" }}
+          lg={{
+            span: 6,
+          }}
+        >
           <Link href="/monitor">
             <Card
               hoverable
@@ -26,7 +35,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={monitor}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="news image"
                 />
@@ -36,7 +45,12 @@ const FeaturedCategory = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={4}>
+        <Col
+          style={{ margin: "10px 0" }}
+          lg={{
+            span: 6,
+          }}
+        >
           <Link href="/processor">
             <Card
               hoverable
@@ -44,7 +58,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={processor}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="processor image"
                 />
@@ -56,7 +70,12 @@ const FeaturedCategory = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={4}>
+        <Col
+          style={{ margin: "10px 0" }}
+          lg={{
+            span: 6,
+          }}
+        >
           <Link href="/motherboard">
             <Card
               hoverable
@@ -64,7 +83,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={motherboard}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="news image"
                 />
@@ -76,7 +95,12 @@ const FeaturedCategory = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={4}>
+        <Col
+          style={{ margin: "10px 0" }}
+          lg={{
+            span: 6,
+          }}
+        >
           <Link href="/storage">
             <Card
               hoverable
@@ -84,7 +108,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={storage}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="news image"
                 />
@@ -94,7 +118,12 @@ const FeaturedCategory = () => {
             </Card>
           </Link>
         </Col>
-        <Col span={4} style={{ margin: "10px 0" }}>
+        <Col
+          lg={{
+            span: 6,
+          }}
+          style={{ margin: "10px 0" }}
+        >
           <Link href="/cooler">
             <Card
               hoverable
@@ -102,7 +131,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={cooler}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="news image"
                 />
@@ -114,7 +143,12 @@ const FeaturedCategory = () => {
             </Card>
           </Link>
         </Col>
-        <Col style={{ margin: "10px 0" }} span={4}>
+        <Col
+          style={{ margin: "10px 0" }}
+          lg={{
+            span: 6,
+          }}
+        >
           <Link href="/ram">
             <Card
               hoverable
@@ -122,7 +156,7 @@ const FeaturedCategory = () => {
                 <Image
                   src={ram}
                   width={200}
-                  height={200}
+                  height={270}
                   responsive
                   alt="ram image"
                 />

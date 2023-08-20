@@ -25,7 +25,9 @@ const FeatureProduct = ({ featureProducts }) => {
             key={product.id}
             style={{ margin: "10px 0" }}
             className="gutter-row"
-            span={6}
+            lg={{
+              span: 6,
+            }}
           >
             <Card
               hoverable
