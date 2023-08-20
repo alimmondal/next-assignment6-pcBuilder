@@ -12,7 +12,10 @@ const FeatureProduct = ({ featureProducts }) => {
   const { Meta } = Card;
   return (
     <>
-      <div className="" style={{ textAlign: "center", margin: "20px 0" }}>
+      <div
+        // className={styles.FProductHeader}
+        style={{ textAlign: "center", margin: "20px 0" }}
+      >
         <h1 style={{ fontSize: "40px" }}>FEATURED PRODUCTS</h1>
         <h3 style={{ textAlign: "center" }}>
           Check & Get Your Desired Product!

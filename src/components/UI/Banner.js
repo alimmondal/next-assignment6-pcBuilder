@@ -8,31 +8,19 @@ import {
 } from "@ant-design/icons";
 import { Carousel, Col, Row } from "antd";
 import Image from "next/image";
-
-const contentStyle = {
-  height: "425px",
-  color: "#000",
-};
+import styles from "../../styles/banner.module.css";
 
 const Banner = () => (
-  <Carousel
-    effect="fade"
-    autoplay
-    style={{
-      margin: "20px 0px",
-    }}
-  >
+  <Carousel effect="fade" autoplay className={styles.container}>
     {/* slider-1 */}
-    <div
-      style={{ display: "flex", flexWrap: "wrap", flexWrap: "wrap-reverse" }}
-    >
-      <Row>
+    <div>
+      <Row className={styles.rowContainer}>
         <Col
           lg={{
             span: 8,
           }}
         >
-          <h1 style={{ fontSize: "50px" }}>
+          <h1>
             LET&apos;S BUILD
             <br />
             YOUR COMPUTER
@@ -67,7 +55,7 @@ const Banner = () => (
             </span>
           </p>
 
-          <p style={{ fontSize: "20px" }}>
+          <p>
             Beauteous before up across felt sheepishly and more mournfully the
             wow so more flustered and one up pushed salamander collective
             blinked that iguanodon bid much some since hey far goodness jaguar
@@ -93,24 +81,24 @@ const Banner = () => (
           lg={{
             span: 16,
           }}
-          style={contentStyle}
+          className={styles.contentStyle}
         >
-          <Image src={perk} responsive alt="drawing_image" />
+          <Image src={perk} alt="drawing_image" className={styles.SImage} />
         </Col>
       </Row>
     </div>
     {/* slider-2 */}
     <div>
-      <Row>
+      <Row className={styles.rowContainer}>
         <Col
           lg={{
             span: 8,
           }}
         >
-          <h1 style={{ fontSize: "50px" }}>
+          <h1>
             LET&apos;S BUILD
             <br />
-            YOUR COMPUTER
+            YOUR PC
           </h1>
           <div
             className="line"
@@ -142,7 +130,7 @@ const Banner = () => (
             </span>
           </p>
 
-          <p style={{ fontSize: "20px" }}>
+          <p>
             A spread opened patient and compulsively one placed seagull goodness
             python owing snapped yikes equitable when much the much Lorem ipsum
             dolor sit, amet consectetur adipisicing elit. Eligendi, tenetur!...
@@ -167,13 +155,13 @@ const Banner = () => (
           lg={{
             span: 16,
           }}
-          style={contentStyle}
+          className={styles.contentStyle}
         >
           <Image
             src={viper}
-            responsive
             alt="eagle_image"
             style={{ grayScale: "-1" }}
+            className={styles.SImage}
           />
         </Col>
       </Row>
