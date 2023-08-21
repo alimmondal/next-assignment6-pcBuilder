@@ -9,7 +9,7 @@ import {
   TwitterSquareFilled,
   UserOutlined,
 } from "@ant-design/icons";
-import { Button, Dropdown, Layout, Menu, Space } from "antd";
+import { Button, Dropdown, Layout, Menu } from "antd";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
 
@@ -53,19 +53,12 @@ const RootLayout = ({ children }) => {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        <div className="brand-logo">
+        <div>
           <h1>
-            <Link
-              href="/"
-              style={{
-                color: "white",
-                backgroundColor: "#404040",
-                padding: "5px 10px",
-                borderRadius: "3px",
-              }}
-            >
+            <Link className={styles.brandLogo} href="/">
               SUN_TECH
             </Link>
           </h1>
@@ -78,19 +71,20 @@ const RootLayout = ({ children }) => {
             }}
           >
             <a onClick={(e) => e.preventDefault()}>
-              <Space>
-                Category
-                <DownOutlined style={{ marginRight: "10px" }} />
-              </Space>
+              {/* <Space> */}
+              Category
+              <DownOutlined style={{ marginRight: "10px" }} />
+              {/* </Space> */}
             </a>
           </Dropdown>
-          <Link href="/">
+
+          <Link className={styles.menuToDisplay} href="/">
             <items>
               <ProfileOutlined />
               Home
             </items>
           </Link>
-          <Link href="/about">
+          <Link className={styles.menuToDisplay} href="/about">
             <items
               style={{
                 margin: "0px 25px",
@@ -100,19 +94,15 @@ const RootLayout = ({ children }) => {
               About Us
             </items>
           </Link>
-          <Link href="/contact">
+          <Link className={styles.menuToDisplay} href="/contact">
             <items>
               <MobileOutlined />
               Contact Us
             </items>
           </Link>
           <Link href="/pc-builder">
-            <items
-              style={{
-                margin: "0px 25px",
-              }}
-            >
-              <Button>
+            <items>
+              <Button className={styles.pcButton}>
                 <MobileOutlined />
                 PC Builder
               </Button>

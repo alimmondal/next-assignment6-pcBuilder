@@ -1,18 +1,49 @@
-.social_icons a{
-    font-size: 28px;
-    margin: 15px 3px;
-    color: #000;
+.brandLogo {
+  color: white;
+  background-color: #404040;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
-.menu_items a{
-    font-size: 18px;
-    text-decoration: none;
+.social_icons a {
+  font-size: 28px;
+  margin: 15px 3px;
+  color: #000;
+}
+.pcButton {
+  margin-left: 25px;
+}
+.menu_items a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.line {
+  height: 5px;
+  margin: 10px 0;
+  background: #000;
+}
+
+@media screen and (max-width: 480px) {
+  .brandLogo {
     color: white;
-    text-transform: uppercase;
-}
-
-.line{
-    height: 5px;
-    margin: 10px 0;
-    background: #000;
+    background-color: #404040;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  .menu_items a {
+    font-size: 12px;
+  }
+  .menuToDisplay {
+    display: none;
+  }
+  .pcButton {
+    margin-left: 5px;
+    font-size: 12px;
+  }
 }

@@ -9,15 +9,7 @@ import styles from "../styles/pc-builder.module.css";
 const PcBuilder = () => {
   return (
     <div style={{}}>
-      <div
-        style={{
-          boxShadow:
-            "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-          margin: "5% 20%",
-          padding: "3% 5%",
-          // width: "70%",
-        }}
-      >
+      <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.subContainer}>
             <FiMonitor size={80} />
