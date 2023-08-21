@@ -11,7 +11,7 @@ const ProductDetailPage = ({ product }) => {
   return (
     <div>
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
-        <Col className="gutter-row" span={12}>
+        <Col className="gutter-row" lg={{ span: 12 }}>
           <Image
             src={product?.image_url}
             width={500}
@@ -20,7 +20,7 @@ const ProductDetailPage = ({ product }) => {
             alt="news image"
           />
         </Col>
-        <Col className="gutter-row" span={12}>
+        <Col lg={{ span: 12 }}>
           <h1 style={{ fontSize: "25px" }}>{product?.title}</h1>
           <span>
             <ProfileOutlined />

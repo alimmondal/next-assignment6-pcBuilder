@@ -1,6 +1,7 @@
 import { Button, Col } from "antd";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../../../styles/processor.module.css";
 
 const ProcessorCategory = ({ processor }) => {
   return (
@@ -17,23 +18,17 @@ const ProcessorCategory = ({ processor }) => {
               //   width: "70%",
             }}
           >
-            <div
-              className=""
-              style={{
-                padding: "10px",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
+            <div className={styles.container}>
               <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "1em",
-                }}
+                className={styles.subContainer}
+                style={
+                  {
+                    // display: "flex",
+                    // justifyContent: "center",
+                    // alignItems: "center",
+                    // gap: "1em",
+                  }
+                }
               >
                 <Image
                   src={product.image_url}
@@ -42,7 +37,7 @@ const ProcessorCategory = ({ processor }) => {
                   responsive
                   alt="news image"
                 />
-                {/* <FiMonitor size={80} /> */}
+
                 <div
                   style={{
                     display: "flex",

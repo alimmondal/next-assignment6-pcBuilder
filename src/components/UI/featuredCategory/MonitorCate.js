@@ -14,7 +14,7 @@ const MonitorCategory = ({ monitors }) => {
       <h1>Monitor Category</h1>
       <Row gutter={{ xs: 8, sm: 16, md: 26, lg: 32 }}>
         {monitors?.map((products) => (
-          <Col key={products.id} style={{ margin: "10px 0" }} span={6}>
+          <Col key={products.id} style={{ margin: "10px 0" }} lg={{ span: 6 }}>
             <Card
               hoverable
               cover={

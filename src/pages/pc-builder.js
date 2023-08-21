@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BsFillCpuFill, BsFillMouseFill, BsMotherboard } from "react-icons/bs";
 import { FiMonitor } from "react-icons/fi";
 import { GiComputerFan, GiProcessor } from "react-icons/gi";
+import styles from "../styles/pc-builder.module.css";
 
 const PcBuilder = () => {
   return (
@@ -17,49 +18,12 @@ const PcBuilder = () => {
           // width: "70%",
         }}
       >
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
-            {/* <Image
-              src={viper}
-              width={100}
-              height={100}
-              responsive
-              alt="news image"
-            /> */}
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <FiMonitor size={80} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>Monitor</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
           <Link href={"/monitor"}>
@@ -68,42 +32,12 @@ const PcBuilder = () => {
         </div>
         <Divider orientation="left"></Divider>
 
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <BsFillCpuFill size={80} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>CPU/ Processor</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
           <Link href={"/processor"}>
@@ -112,42 +46,12 @@ const PcBuilder = () => {
         </div>
         <Divider orientation="left"></Divider>
 
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <BsMotherboard size={70} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>Motherboard</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
           <Link href={"/motherboard"}>
@@ -156,87 +60,26 @@ const PcBuilder = () => {
         </div>
         <Divider orientation="left"></Divider>
 
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <GiComputerFan size={80} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>CPU Cooler</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
-
           <Link href={"/processor"}>
             <Button>Choose</Button>
           </Link>
         </div>
         <Divider orientation="left"></Divider>
 
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <GiProcessor size={80} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>Ram</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
           <Link href={"/ram"}>
@@ -245,42 +88,12 @@ const PcBuilder = () => {
         </div>
         <Divider orientation="left"></Divider>
 
-        <div
-          className=""
-          style={{
-            padding: "10px",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1em",
-            }}
-          >
+        <div className={styles.container}>
+          <div className={styles.subContainer}>
             <BsFillMouseFill size={80} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "left",
-                alignItems: "start",
-                gap: "0.5em",
-              }}
-            >
+            <div className={styles.category}>
               <p>Gaming Mouse</p>
-              <div
-                style={{
-                  height: "17px",
-                  background: "lightgray",
-                  width: "15em",
-                }}
-              ></div>
+              <div className={styles.divContainer}></div>
             </div>
           </div>
 
